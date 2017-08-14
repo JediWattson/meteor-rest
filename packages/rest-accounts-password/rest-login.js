@@ -11,7 +11,7 @@ JsonRoutes.add('options', '/users/login', function (req, res) {
 
 JsonRoutes.add('post', '/users/login', function (req, res) {
   var options = req.body;
-
+  console.log(options)
   var user;
   if (options.hasOwnProperty('email')) {
     check(options, {
